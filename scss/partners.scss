@@ -1,0 +1,12 @@
+.partners {
+	background: $light;
+
+	.partners__wrap {
+		padding: 0 30px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: 221px;
+	}
+}

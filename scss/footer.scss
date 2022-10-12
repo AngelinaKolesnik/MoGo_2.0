@@ -1,0 +1,13 @@
+.footer {
+	@include section_padding-top;
+
+	h6 {
+		border-top: 1px solid $light_gray;
+		@include center;
+		@include ffr700;
+		text-transform: uppercase;
+		height: 50px;
+		margin-top: 42px;
+		font-size: 13px;
+	}
+}

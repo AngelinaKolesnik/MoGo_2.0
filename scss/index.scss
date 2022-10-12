@@ -1,0 +1,36 @@
+@import './fonts.scss';
+@import './mixins.scss';
+@import './variables.scss';
+@import './header.scss';
+@import './intro.scss';
+@import './topping.scss';
+@import './about.scss';
+@import './futures.scss';
+@import './services.scss';
+@import './columns.scss';
+@import './devices.scss';
+@import './team.scss';
+@import './partners.scss';
+@import './clients.scss';
+@import './blog.scss';
+@import './map.scss';
+@import './footer.scss';
+
+*{
+	text-decoration: none;
+	list-style: none;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, body, .description, p {
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+}

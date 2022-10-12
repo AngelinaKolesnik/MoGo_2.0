@@ -1,0 +1,37 @@
+.futures {
+	background: $mint;
+
+	ul {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		align-items: center;
+
+		li {
+			width: 20%;
+			border-left: 1px solid $white;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			@include center;
+			color: $white;
+			height: 250px;
+
+			h3 {
+				@include ffr700;				
+				font-size: 64px;
+				line-height: 54px;
+			}
+
+			small {
+				@include ffr500;
+				font-size: 24px;
+				line-height: 24px;
+			}
+		}
+
+		li:last-of-type {
+			border-right: 1px solid $white;
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.subtitle {
+	font-size: 30px;
+	line-height: 44px;
+	@include ffks400;
+	@include center;
+	color: $dark;
+	height: 80px;
+}
+
+.title {
+	@include ffr900;
+	font-size: 36px;
+	line-height: 42px;
+	@include center;
+	text-transform: uppercase;
+	color: $dark;
+	height: 105px;
+	padding-bottom: 24px;
+	position: relative;
+
+	&--pink {
+		color: $pink;
+	}
+
+	&::after {
+		content: '';
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 170px;
+		height: 4px;
+		background-color: $pink;
+		position: absolute;
+		margin: 0 auto;
+	}
+}
+
+.description {
+	@include ffr400;
+	font-size: 18px;
+	line-height: 21px;
+	@include center;
+	color: $black;
+	height: 118px;
+}
