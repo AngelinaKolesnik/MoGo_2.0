@@ -1,3 +1,4 @@
+@import './bootstrap.scss';
 @import './fonts.scss';
 @import './mixins.scss';
 @import './variables.scss';
@@ -15,6 +16,8 @@
 @import './blog.scss';
 @import './map.scss';
 @import './footer.scss';
+@import './reviews.scss';
+@import './works.scss';
 
 *{
 	text-decoration: none;

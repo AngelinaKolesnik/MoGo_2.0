@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/AngelinaKolesnik/MoGo_2.0#readme",
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "parcel": "^2.7.0",
     "sass": "^1.55.0"
   },
