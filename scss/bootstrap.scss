@@ -67,15 +67,10 @@ ol, ul, dl {
 	margin: 0;
 }
 
-.carousel-inner {
-	width: 100%;
-	max-width: 970px;
-	margin: 0 auto;
-	position: relative;
-	overflow: hidden;
-}
-
 .carousel-item.active, .carousel-item-next, .carousel-item-prev {
 	display: flex;
-	margin: 45px 0 39px;
+}
+
+.container-fluid {
+	padding: 0;
 }
