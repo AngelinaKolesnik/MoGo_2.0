@@ -10,6 +10,18 @@
 		align-items: center;
 		justify-content: space-between;
 		height: 100px;
+
+		@media (max-width: 1200px) {
+			height: 68px;
+		}
+
+		.logo {
+
+			@media (max-width: 1200px) {
+				height: 18px;
+				width: 66px;
+			}
+		}
 		
 		.nav__menu {
 			display: flex;
@@ -22,9 +34,14 @@
 	
 				li {
 					width: 114px;
+
+					@media (max-width: 1200px) {
+						width: 94px;
+					}
 	
 					a {
 						@include ffr600;
+						font-size: 14px;
 						width: 100%;
 						text-transform: uppercase;
 						color: $white;
@@ -32,6 +49,10 @@
 						text-align: center;
 						padding: 6px 0;
 						position: relative;
+
+						@media (max-width: 1200px) {
+							font-size: 13px;
+						}
 	
 						&:active {
 							color: $soft_orange;
@@ -46,6 +67,10 @@
 								background: $soft_orange;
 								position: absolute;							
 								margin: 0 auto;
+
+								@media (max-width: 1200px) {
+									width: 70px;
+								}
 							}
 						}
 					}
@@ -55,10 +80,20 @@
 		
 		.nav__icons {
 			display: flex;
-			align-items: center;
 			
 			a:not(:last-of-type) {
 				margin: 0 34px;
+
+				@media (max-width: 1200px) {
+					margin: 0 24px;
+				}
+			}
+
+			img {
+				@media (max-width: 1200px) {
+					width: 16px;
+					height: 16px;
+				}
 			}
 		}
 	}

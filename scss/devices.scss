@@ -7,6 +7,10 @@
 	background-size: cover;
 	position: relative;
 
+	@media (max-width: 1200px) {
+		padding-bottom: 39px;
+	}
+
 	&::after {
 		content: '';
 		right: 0;
@@ -27,16 +31,26 @@
 			max-width: 685px;
 			width: 100%;
 			display: block;
+			
+			@media (max-width: 1200px) {
+				max-width: 463px;
+				margin: 40px auto 0;
+			}
 		}
 
 		.devices__phone {
 			position: absolute;
 			right: 200px;
-			top: 458px;
-			left: 770px;
+			top: 456px;
 			z-index: 5;
 			max-width: 200px;
 			width: 100%;
+
+			@media (max-width: 1200px) {
+				right: 250px;
+				top: 340px;
+				max-width: 136px;
+			}
 		}
 	}
 }

@@ -42,6 +42,13 @@
 	margin-top: 22px;
 	width: 42px;
 	height: 42px;
+
+	@media (max-width: 1200px) {
+		width: 28px;
+		height: 28px;
+		margin-top: 15px;
+		margin-left: 16px;
+	}
 }
 
 .carousel-control-next-icon {
@@ -52,6 +59,13 @@
 	margin-top: 22px;
 	width: 42px;
 	height: 42px;
+
+	@media (max-width: 1200px) {
+		width: 28px;
+		height: 28px;
+		margin-top: 15px;
+		margin-right: 25px;
+	}
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -74,3 +88,17 @@ ol, ul, dl {
 .container-fluid {
 	padding: 0;
 }
+
+// .accordion-button:after {
+// 	width: 42px;
+// 	height: 42px;
+// 	content: "";
+// 	background-image: none;
+// 	background-image: url('../dist/arrow.5053a6e0.svg');
+// 	transform: rotate(-90deg);
+// 	background-repeat: no-repeat;
+// 	background-size: var(--bs-accordion-btn-icon-width);
+// 	transition: var(--bs-accordion-btn-icon-transition);
+// 	flex-shrink: 0;
+// 	margin-left: auto;
+// }

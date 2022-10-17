@@ -7,6 +7,10 @@
 	background-size: cover;
 	position: relative;
 
+	@media (max-width: 1200px) {
+		padding-bottom: 29px;
+	}
+
 	&::after {
 		content: '';
 		position: absolute;

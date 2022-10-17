@@ -26,8 +26,14 @@
 		@include center;
 		padding-top: 177px;
 		font-size: 64px;
-		line-height: 93px;
+		line-height: 80px;
 		color: $white;
+
+		@media (max-width: 1200px) {
+			padding-top: 120px;
+			font-size: 48px;
+			line-height: 54px;
+		}
 	}
 
 	.intro__title {
@@ -37,9 +43,21 @@
 		font-size: 144px;
 		line-height: 176px;
 		padding-bottom: 44px;
-		margin-bottom: 72px;
 		text-transform: uppercase;
 		position: relative;
+		width: 100%;
+		max-width: 803px;
+		margin: 0 auto 72px;
+
+		@media (max-width: 1200px) {
+			font-size: 96px;
+			line-height: 117px;
+			padding-bottom: 30px;
+			height: 281px;
+			width: 100%;
+			max-width: 603px;
+			margin-bottom:50px;
+		}
 
 		&::after {
 			content: '';
@@ -51,6 +69,10 @@
 			background-color: $white;
 			position: absolute;
 			margin: 0 auto;
+
+			@media (max-width: 1200px) {
+				width: 115px;
+			}
 		}
 	}
 	
@@ -67,6 +89,14 @@
 		margin: 0 auto;
 		display: block;
 		margin-bottom: 112px;
+
+		@media (max-width: 1200px) {
+			width: 318px;
+			height: 54px;
+			font-size: 18px;
+			line-height: 21px;
+			margin-bottom: 75px;
+		}
 
 		&:hover {
 			background: $white;

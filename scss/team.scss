@@ -1,4 +1,8 @@
 .team {
 	@include section_padding-top-2;
 	padding-bottom: 84px;
+
+	@media (max-width: 1200px) {
+		padding-bottom: 58px;
+	}
 }

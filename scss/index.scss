@@ -18,6 +18,7 @@
 @import './footer.scss';
 @import './reviews.scss';
 @import './works.scss';
+@import './platform.scss';
 
 *{
 	text-decoration: none;
@@ -36,4 +37,9 @@ h1, h2, h3, h4, h5, h6, body, .description, p {
 	margin: 0 auto;
 	padding: 0 15px;
 	position: relative;
+
+	@media (max-width: 1200px) {
+		max-width: 1024px;
+		padding: 0 16px;
+	}
 }

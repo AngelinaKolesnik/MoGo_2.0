@@ -1,4 +1,8 @@
 .about {
 	@include section_padding-top;
 	padding-bottom: 108px;	
+
+	@media (max-width: 1200px) {
+		padding-bottom: 60px;
+	}
 }

@@ -1,4 +1,8 @@
 .services {
 	@include section_padding-top;
 	padding-bottom: 91px;
+
+	@media (max-width: 1200px) {
+		padding-bottom: 58px;
+	}
 }
