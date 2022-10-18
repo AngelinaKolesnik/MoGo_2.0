@@ -11,6 +11,10 @@
 		padding-bottom: 39px;
 	}
 
+	@media (max-width: 576px) {
+		padding-bottom: 25px;
+	}
+
 	&::after {
 		content: '';
 		right: 0;
@@ -36,6 +40,11 @@
 				max-width: 463px;
 				margin: 40px auto 0;
 			}
+
+			@media (max-width: 576px) {
+				margin: 37px auto 0;
+				max-width: 540px;
+			}
 		}
 
 		.devices__phone {
@@ -43,13 +52,20 @@
 			right: 200px;
 			top: 456px;
 			z-index: 5;
-			max-width: 200px;
-			width: 100%;
+			width: 200px;
 
 			@media (max-width: 1200px) {
 				right: 250px;
-				top: 340px;
-				max-width: 136px;
+				top: 338px;
+				width: 136px;
+			}
+
+			@media (max-width: 576px) {
+				height: 175px;
+				width: 85px;
+				top: auto;
+				bottom: -49px;
+				right: 29px;
 			}
 		}
 	}

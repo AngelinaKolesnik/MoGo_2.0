@@ -82,6 +82,10 @@
 	@media (max-width: 1200px) {
 		margin: 0 -10px;
 	}
+
+	@media (max-width: 576px) {
+		margin: 0;
+	}
 }
 
 @mixin column__item {
@@ -91,6 +95,11 @@
 
 	@media (max-width: 1200px) {
 		padding: 0 10px;
+	}
+
+	@media (max-width: 576px) {
+		width: 100%;
+		padding: 0;
 	}
 }
 
@@ -106,6 +115,10 @@
 	width: 100%;
 	height: 100%;
 	transition: .3s;
+
+	@media (max-width: 576px) {
+		height: 83px;
+	}
 }
 
 @mixin column__content--gradient {
@@ -125,6 +138,13 @@
 		right: 10px;
 		width: calc(100% - 20px);	
 	}
+
+	@media (max-width: 576px) {
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 83px;
+	}
 }
 
 @mixin transform_-16 {
@@ -133,5 +153,9 @@
 
 	@media (max-width: 1200px) {
 		transform: translate(-6px, -6px);
+	}
+
+	@media (max-width: 576px) {
+		transform: none;
 	}
 }

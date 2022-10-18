@@ -7,11 +7,14 @@
 		margin: 0;
 		align-items: center;
 
+		@media (max-width: 576px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
 		li {
-			width: 20%;
 			border-left: 1px solid $white;
 			display: flex;
-			flex-direction: column;
 			width: 100%;
 			@include center;
 			color: $white;
@@ -19,6 +22,13 @@
 
 			@media (max-width: 1200px) {
 				height: 167px;
+			}
+
+			@media (max-width: 576px) {
+				height: 124px;
+				width: 50%;
+				border: none;
+				border-bottom: 1px solid $white;
 			}
 
 			h3 {
@@ -46,6 +56,10 @@
 
 		li:last-of-type {
 			border-right: 1px solid $white;
+
+			@media (max-width: 576px) {
+				border: none;
+			}
 		}
 	}
 }

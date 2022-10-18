@@ -11,6 +11,11 @@
 		padding-bottom: 29px;
 	}
 
+	@media (max-width: 576px) {
+		padding-bottom: 42px;
+		padding-top: 42px;
+	}
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -33,6 +38,11 @@
 			@media (max-width: 1200px) {
 				width: 28px;
 				height: 28px;
+			}
+
+			@media (max-width: 576px) {
+				width: 42px;
+				height: 42px;
 			}
 		}
 	}

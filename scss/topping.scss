@@ -49,6 +49,10 @@
 		@media (max-width: 1200px) {
 			width: 148px;
 		}
+
+		@media (max-width: 576px) {
+			width: 134px;
+		}
 	}
 }
 
@@ -64,5 +68,9 @@
 		font-size: 14px;
 		line-height: 16px;
 		height: 99px;
+	}
+
+	@media (max-width: 576px) {
+		height: 130px;
 	}
 }

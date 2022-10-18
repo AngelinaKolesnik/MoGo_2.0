@@ -13,18 +13,32 @@
 
 		@media (max-width: 1200px) {
 			height: 68px;
+			right: 16px;
+			left: 16px;
+		}
+		@media (max-width: 576px) {
+			height: 56px;
 		}
 
-		.logo {
+		.mogo {
 
 			@media (max-width: 1200px) {
 				height: 18px;
 				width: 66px;
 			}
+
+			@media (max-width: 576px) {
+				height: 15px;
+				width: 54px;
+			}
 		}
 		
 		.nav__menu {
 			display: flex;
+
+			@media (max-width: 576px) {
+				display: none;
+			}
 	
 			ul {
 				display: flex;
@@ -76,24 +90,45 @@
 					}
 				}
 			}
-		}
-		
-		.nav__icons {
-			display: flex;
-			
-			a:not(:last-of-type) {
-				margin: 0 34px;
 
-				@media (max-width: 1200px) {
-					margin: 0 24px;
+			.nav__icons {
+				display: flex;
+				
+				a:not(:last-of-type) {
+					margin: 0 34px;
+	
+					@media (max-width: 1200px) {
+						margin: 0 24px;
+					}
+				}
+	
+				img {
+					@media (max-width: 1200px) {
+						width: 16px;
+						height: 16px;
+					}
 				}
 			}
+		}
+		
+		.header__btn, .header__btn--open {
+			display: none;
 
-			img {
-				@media (max-width: 1200px) {
-					width: 16px;
-					height: 16px;
-				}
+			@media (max-width: 576px) {
+				height: 19px;
+				width: 24px;
+				margin-right: 17px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				transition: .3s;
+				position: relative;
+
+				div {
+					height: 3px;
+					width: 100%;
+					background: #fff;
+				}	
 			}
 		}
 	}
