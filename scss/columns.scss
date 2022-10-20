@@ -98,9 +98,10 @@
 				content: '';
 				position: absolute;
 				background: $soft_yellow;
-				left: 0;
+				left: 15px;
+				right: 15px;
 				top: -4px;
-				width: 100%;
+				width: calc(100% - 30px);
 				height: 4px;
 
 				@media (max-width: 1200px) {
@@ -179,13 +180,17 @@
 
 	@media (max-width: 576px) {
 		margin-top: 16px;
-		flex-direction: column;
 	}
 
 	.column__item {
 
 		.column__content--gradient {
 			@include column__content--gradient;
+
+			@media (max-width: 576px) {
+				height: 83px;
+				opacity: 1;
+			}
 		}
 
 		.column__next {
@@ -196,6 +201,8 @@
 			@media (max-width: 576px) {
 				flex-direction: row;
 				justify-content: start;
+				height: 83px;
+				opacity: 1;
 			}
 
 			.column__icon {
@@ -310,6 +317,10 @@
 			}
 		}
 
+		&:first-of-type {
+			margin-top: 0;
+		}
+
 		img {
 			height: 70px;
 			width: 70px;
@@ -368,22 +379,47 @@
 		margin-top: 49px;
 	}
 
+	@media (max-width: 576px) {
+		margin-top: 19px;
+	}
+
 	.column__item {
 
 		.column__wrap {			
 			position: relative;
+
+			@media (max-width: 576px) {
+				height: 236px;
+			}
+
+			.column__content {
+
+				@media (max-width: 576px) {
+					object-fit: cover;
+				}
+			}
 
 			.column__content--gradient {
 				@include column__content--gradient;
 				width: 100%;
 				left: 0;
 				right: 0;
+
+				@media (max-width: 576px) {
+					display: none;
+				}
 			}
 
 			.column__next {
 				@include column__next--hover;
 				flex-direction: row;
 				align-items: center;	
+
+				@media (max-width: 576px) {
+					align-items: end;
+					justify-content: end;
+					opacity: 1;
+				}
 		
 				.column__icon {
 					width: 42px;
@@ -392,6 +428,11 @@
 					@media (max-width: 1200px) {
 						width: 36px;
 						height: 36px;
+					}
+
+					@media (max-width: 576px) {
+						width: 42px;
+						height: 42px;
 					}
 				}
 			
@@ -430,6 +471,14 @@
 			}
 		}
 	}
+
+	.column__item:not(:first-of-type) {
+		
+		@media (max-width: 576px) {
+			margin-top: 30px;
+		}
+	}
+
 }
 
 .clients .column {
@@ -563,7 +612,6 @@
 
 .blog .column {
 	margin-top: 42px;
-	flex-wrap: wrap;
 
 	@media (max-width: 1200px) {
 		margin-top: 36px;
@@ -885,14 +933,14 @@
 			height: 55px;	
 			font-size: 18px;
 
+			@media (max-width: 1200px) {
+				height: 37px;	
+				font-size: 14px;
+			}
+			
 			@media (max-width: 576px) {
 				display: block;
 				height: auto;
-			}
-
-			@media (max-width: 1200px) {
-				height: 100%;	
-				font-size: 14px;
 			}
 	
 			.form__subscribe {
@@ -901,6 +949,7 @@
 
 				@media (max-width: 576px) {
 					margin-bottom: 24px;
+					max-width: 540px;
 				}
 			}
 

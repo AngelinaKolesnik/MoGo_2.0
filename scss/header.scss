@@ -113,6 +113,7 @@
 		
 		.header__btn, .header__btn--open {
 			display: none;
+			position: relative;
 
 			@media (max-width: 576px) {
 				height: 19px;
@@ -121,15 +122,43 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
-				transition: .3s;
+				// transition: .3s;
 				position: relative;
+
+				// &:hover {	
+
+				// 	.header--open {
+				// 		position: absolute;
+				// 		left: 0;
+				// 		top: 0;
+				// 		z-index: 10;
+				// 		width: 100%;
+				// 		height: 100vh;
+				// 		background-image: url(../img/img_of_intro.png);
+				// 		background-repeat: no-repeat;
+				// 		background-position: center;
+				// 		background-size: cover;
+				// 		position: relative;
+					
+				// 		&::after {
+				// 			content: '';
+				// 			position: absolute;
+				// 			left: 0;
+				// 			right: 0;
+				// 			bottom: 0;
+				// 			width: 100%;
+				// 			height: 100%;
+				// 			background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+				// 		}
+				// 	}
+				// }
 
 				div {
 					height: 3px;
 					width: 100%;
 					background: #fff;
 				}	
-			}
+			}	
 		}
 	}
 }
