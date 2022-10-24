@@ -372,6 +372,44 @@
 	}
 }
 
+.platform .column {
+	margin-top: 42px;
+
+	@media (max-width: 1200px) {
+		margin-top: 36px;
+	}
+
+	@media (max-width: 576px) {
+		margin-top: 29px;
+	}
+
+	.column__item {
+		width: 50%;
+		max-height: 483px;
+		height: 100%;
+
+		@media (max-width: 576px) {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.column__img {
+			width: 100%;
+
+			@media (max-width: 576px) {
+				height: 142px;
+				object-fit: cover;
+				margin-bottom: 29px;
+			}
+		}
+
+		.accordion-flush {
+			width: 100%;
+		}
+	}
+}
+
 .team .column {
 	margin-top: 58px;
 

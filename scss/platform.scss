@@ -1,4 +1,12 @@
 .platform {
 	@include section_padding-top;
 	padding-bottom: 114px;
+
+	@media (max-width: 1200px) {
+		padding-bottom: 88px;
+	}
+
+	@media (max-width: 576px) {
+		padding-bottom: 31px;
+	}	
 }
