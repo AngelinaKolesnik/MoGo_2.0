@@ -107,30 +107,75 @@ ol, ul, dl {
 	}
 }
 
-.accordion-body {
-	font-size: 14px;
-	line-height: 17px;
-	@include ffr400;
-	border: none;
+.accordion-filling {
+	padding: 22px;
 	border: 1px solid $light_gray;
 	border-top: 0;
+}
+
+.accordion-body {
+	font-size: 18px;
+	line-height: 21px;
+	@include ffr400;
+	border: none;
+	padding: 0 54px 0 0;
+	height: 124px;
+	overflow: auto;
+
+	@media (max-width: 1200px) {
+		font-size: 14px;
+		line-height: 16px;
+		padding: 0 46px 0 0;
+		height: 95px;
+	}
 
 	@media (max-width: 576px) {
 		font-size: 13px;
 		line-height: 15px;
 	}
+
+	&::-webkit-scrollbar {
+		width: 7px;
+
+		@media (max-width: 1200px) {
+			width: 6px;
+		}
+  }
+
+  &::-webkit-scrollbar-track {
+		background: rgba(245, 245, 245, 1);
+		height: 128px;
+
+		@media (max-width: 1200px) {
+			height: 109px;
+		}
+  }
+
+	&::-webkit-scrollbar-thumb {
+		background: $mint;
+		background-clip: content-box;
+	}
 }
 
 .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
-	font-size: 18px;
+	font-size: 24px;
 	text-transform: uppercase;
-	line-height: 21px;
+	line-height: 28px;
 	@include ffr700;
+	box-shadow: none;
+	color: $dark;
 	border: 1px solid $light_gray;
+	height: 92px;
+
+	@media (max-width: 1200px) {
+		font-size: 18px;
+		line-height: 21px;
+		height: 78px;
+	}
 
 	@media (max-width: 576px) {
 		font-size: 14px;
-		line-height: 18px;
+		line-height: 16px;
 	}
 }
 
@@ -152,12 +197,24 @@ ol, ul, dl {
 	background-image: none;
 	background-image: url('../img/arrow.svg');
 	transform: rotate(-90deg);
+	height: 42px;
+	width: 42px;
+	background-size: contain;
+
+	@media (max-width: 1200px) {
+		width: 36px;
+		height: 36px;
+	}
 }
 
-.accordion-button:not(.collapsed):after {
-	background-image: none;
-	background-image: url('../img/arrow.svg');	
-	transform: rotate(90deg);
+.accordion-button:not(.collapsed) {
+	background: #fff;
+
+	&::after{ 
+		background-image: none;
+		background-image: url('../img/arrow.svg');	
+		transform: rotate(90deg);
+	}
 }
 
 .accordion-header {
